@@ -3,14 +3,14 @@ function renderHomePage() {
   
   const contentDiv = document.querySelector('.content');
 
-  contentDiv.appendChild(createDiv()).id = 'bg-img';
+  contentDiv.appendChild(createDiv()).id = 'bg-img-home';
   
-  document.querySelector('#bg-img').appendChild(createDiv()).id = 'bg-color';
+  document.querySelector('#bg-img-home').appendChild(createDiv()).id = 'bg-color';
 
   document.querySelector('#bg-color').appendChild(createNavBar()).id = 'nav-bar';
   document.querySelector('#nav-bar').appendChild(createUl());
   
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 3; i++) {
     document.querySelector('#nav-bar ul').appendChild(createLi());
   }
 
@@ -19,9 +19,8 @@ function renderHomePage() {
   }
 
   document.querySelectorAll('#nav-bar ul li a')[0].textContent = 'Home';
-  document.querySelectorAll('#nav-bar ul li a')[1].textContent = 'About';
-  document.querySelectorAll('#nav-bar ul li a')[2].textContent = 'Menu';
-  document.querySelectorAll('#nav-bar ul li a')[3].textContent = 'Contact';
+  document.querySelectorAll('#nav-bar ul li a')[1].textContent = 'Menu';
+  document.querySelectorAll('#nav-bar ul li a')[2].textContent = 'Contact';
   
 
   document.querySelector('#bg-color').appendChild(createDiv()).id = 'restaurant-info';
