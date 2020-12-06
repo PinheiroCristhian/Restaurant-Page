@@ -14,19 +14,19 @@ function renderMenu() {
   
   
   document.querySelectorAll('.food')[0].appendChild(createImg());
-  document.querySelectorAll('img')[0].src = './../../dist/images/fried-chicken.jpg';
+  document.querySelectorAll('img')[0].src = './images/fried-chicken.jpg';
   document.querySelectorAll('.food')[0].appendChild(createP()).innerHTML = 'Fried Chicken <span class="food-price">$39.00</span>';
   
   document.querySelectorAll('.food')[1].appendChild(createImg());
-  document.querySelectorAll('img')[1].src = './../../dist/images/fried-fish.jpg'
+  document.querySelectorAll('img')[1].src = './images/fried-fish.jpg'
   document.querySelectorAll('.food')[1].appendChild(createP()).innerHTML = 'Fried Fish <span class="food-price">$29.00</span>';
 
   document.querySelectorAll('.food')[2].appendChild(createImg());
-  document.querySelectorAll('img')[2].src = './../../dist/images/shrimp.jpg'
+  document.querySelectorAll('img')[2].src = './images/shrimp.jpg'
   document.querySelectorAll('.food')[2].appendChild(createP()).innerHTML = 'Shrimp <span class="food-price">$41.00</span>';
 
   document.querySelectorAll('.food')[3].appendChild(createImg());
-  document.querySelectorAll('img')[3].src = './../../dist/images/vegetable-salad.jpg'
+  document.querySelectorAll('img')[3].src = './images/vegetable-salad.jpg'
   document.querySelectorAll('.food')[3].appendChild(createP()).innerHTML = 'Vegetable Salad <span class="food-price">$19.00</span>';
 
   
