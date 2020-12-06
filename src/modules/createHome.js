@@ -1,4 +1,3 @@
-import DOM from './dom.js';
 function renderHomePage() {
   
   const contentDiv = document.querySelector('.content');

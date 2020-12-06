@@ -1,10 +1,11 @@
 function renderMenu() {
+
   const contentDiv = document.querySelector('.content');
 
   contentDiv.appendChild(createDiv()).id = 'bg-img-menu';
   
   document.querySelector('#bg-img-menu').appendChild(createDiv()).id = 'bg-color';
-
+  
   document.querySelector('#bg-color').appendChild(createNavBar()).id = 'nav-bar';
   document.querySelector('#nav-bar').appendChild(createUl());
   
@@ -22,7 +23,8 @@ function renderMenu() {
 
 
   document.querySelector('#bg-color').appendChild(createDiv()).id = 'menu';
-  document.querySelector('#menu').classList.add('clearfix');
+  document.querySelector('#menu').classList.add('clearfix')
+  
 
   document.querySelector('#menu').appendChild(createH2());
   document.querySelector('#menu h2').textContent = 'MENU';
@@ -30,21 +32,22 @@ function renderMenu() {
   for (let i = 1; i <= 4; i++) {
     document.querySelector('#menu').appendChild(createDiv()).classList.add('food');
   }
-
+  
+  
   document.querySelectorAll('.food')[0].appendChild(createImg());
-  document.querySelectorAll('img')[0].src = './..images/fried-fish.jpg'
+  document.querySelectorAll('img')[0].src = './../src/images/fried-chicken.jpg'
   document.querySelectorAll('.food')[0].appendChild(createP()).innerHTML = 'Fried Chicken <span class="food-price">$39.00</span>';
   
   document.querySelectorAll('.food')[1].appendChild(createImg());
-  document.querySelectorAll('img')[1].src = './..images/fried-fish.jpg'
+  document.querySelectorAll('img')[1].src = './../src/images/fried-fish.jpg'
   document.querySelectorAll('.food')[1].appendChild(createP()).innerHTML = 'Fried Fish <span class="food-price">$29.00</span>';
 
   document.querySelectorAll('.food')[2].appendChild(createImg());
-  document.querySelectorAll('img')[2].src = './..images/fried-fish.jpg'
+  document.querySelectorAll('img')[2].src = './../src/images/shrimp.jpg'
   document.querySelectorAll('.food')[2].appendChild(createP()).innerHTML = 'Shrimp <span class="food-price">$41.00</span>';
 
   document.querySelectorAll('.food')[3].appendChild(createImg());
-  document.querySelectorAll('img')[3].src = './..images/fried-fish.jpg'
+  document.querySelectorAll('img')[3].src = './../src/images/vegetable-salad.jpg'
   document.querySelectorAll('.food')[3].appendChild(createP()).innerHTML = 'Vegetable Salad <span class="food-price">$19.00</span>';
   
   

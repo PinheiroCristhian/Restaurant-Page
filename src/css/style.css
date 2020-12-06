@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .clearfix::before, .clearfix::after {
   content: ' ';
   display: table;
@@ -11,21 +10,26 @@
 .clearfix::after {
  clear: both;
 }
-#bg-img-home {
-  display: none;
-}
-#bg-img-home, #bg-img-menu {
+#bg-img-home, #bg-img-menu, #bg-img-contact {
   background-image: url(../img/bg-image.jpg);
   background-position: center;
   background-size: cover;
 }
-
-#bg-img-home, #bg-img-menu {
+#bg-img-home {
   height: 100vh;
+}
+#bg-img-menu{
+  height: 100%;
+}
+#bg-img-contact {
+  height: 100vh;
+}
+#bg-img-menu, #bg-img-contact {
+  display: none !important;
 }
 #bg-color {
   background-color: rgb(0, 0, 0, .5);
-  height: 100vh;
+  height: 100%;
   
 }
 #nav-bar ul {
@@ -60,19 +64,49 @@
 #menu h2 {
   font-size: 40px;
   text-align: center;
-  margin-top: 30px;  
-
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .food {
   border: 1px solid #fff;
   float: left;
   width: 375px;
   margin: 10px 10px;
+
 }
 .food p {
   padding: 5px;
   text-align: center;
+  background-color: rgba(255, 255, 255, .1);
+  font-size: 20px;
 }
 .food img {
   width: 100%;
+  display: block;
+}
+/*********************CONTACTS***************/
+
+
+#contacts {
+  width: 500px;
+  height: 300px;
+  margin: 150px auto;
+  border: 1px solid #000;
+}
+
+#bg-color-contacts {
+  background-color: rgba(0, 0, 0, .2);
+  height: 100%;
+  color: #fff;
+  padding-top: 0px;
+}
+#bg-color-contacts p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+
+.active {
+  color: #fff !important;
 }
